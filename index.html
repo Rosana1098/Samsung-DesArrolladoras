@@ -1,0 +1,51 @@
+<html lang="es">
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Create Account</title>
+  </head>
+  <body>
+
+	<div class="cont">
+
+			<h1>Create Account</h1>
+			<br><br>
+			<form id="form">
+				<div>
+					<p>Nombre</p>
+					
+					<input type="text" id="nombre" pattern="[A-Z]">
+				</div>
+				<div><span id="nombreR"></span></div>
+				<br>
+
+				<div>
+					<p>Email</p>
+					<input type="email" id="email">
+				</div>
+				<div><span id="emailR"></span></div>
+				<br>
+
+				<div>
+					<p>Clave</p>
+					<input type="password" id="clave" maxlenght="8">
+				</div>
+				<div><span id="claveR"></span></div>
+				<br>
+
+				<div>
+					<p>Confirme su clave</p>
+					<input type="password" id="clave2" maxlenght="8">
+				</div>
+				<div><span id="clave2R"></span></div>
+				<br>
+
+				<input type="button" id="check" value="ENVIAR" onclick="input()">
+				<script src="index.js"></script>
+			</form>
+
+	</div>
+  </body>
+</html>
